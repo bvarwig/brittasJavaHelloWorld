@@ -1,0 +1,14 @@
+# This mainfest can be used to deploy only the java module, after you have deployed the
+# full persefonee app using the  mta.yaml 
+# Steps
+#  * build the java module: "mvn clean package"
+#  * push to your account: "cf push"
+# 
+# This file should contain similar configuration as module java in the overall mta.yaml  
+applications:
+  - name: brittas-hello-world
+    memory: 512M
+    host: d052055-brittas-hello-world
+    buildpack: sap_java_buildpack
+    path: target/hello-java-1.0.war
+    
