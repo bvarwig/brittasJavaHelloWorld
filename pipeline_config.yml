@@ -1,6 +1,6 @@
 #Project Setup
 general:
-  productiveBranch: 'master'
+  productiveBranch: 'pipeline-try'
 
 #Steps Specific Configuration
 steps:
