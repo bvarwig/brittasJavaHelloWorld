@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('echo') {
       steps {
-        sh 'cf -vesion'
+        sh 'echo hello world'
       }
     }
   }
